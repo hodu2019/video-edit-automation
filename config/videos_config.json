@@ -1,0 +1,30 @@
+{
+  "_comment": "File cấu hình cho process_videos.py. Text được dùng chung cho tất cả video.",
+
+  "source_dir":      "source_video",
+  "output_dir":      "output",
+  "background_path": "background.jpg",
+  "audio_path":      "audio/audio_template.wav",
+
+  "video_scale": 0.95,
+
+  "bg_music_volume":       0.25,
+  "original_audio_volume": 1.0,
+
+  "text": "Comment Below",
+
+  "text_position_x":  "center",
+  "text_position_y":  0.88,
+  "text_font_size":   48,
+  "text_color":       [255, 255, 255],
+  "text_stroke_color":[0,   0,   0  ],
+  "text_stroke_width": 2,
+  "text_font_path":   null,
+  "text_padding_x":   40,
+
+  "output_fps":         30,
+  "output_codec":       "libx264",
+  "output_preset":      "fast",
+  "output_crf":         23,
+  "output_audio_codec": "aac"
+}

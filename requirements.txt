@@ -1,0 +1,15 @@
+# ── Video Automation – Python dependencies ────────────────────────────────────
+# Install: pip install -r requirements.txt
+
+# FFmpeg bundled binary (no system install needed)
+imageio-ffmpeg>=0.6.0
+
+# Video reading / metadata fallback
+moviepy>=2.0.0
+imageio>=2.37.0
+
+# Image / text rendering
+Pillow>=10.0.0
+
+# TTS – Microsoft Edge Neural voices (requires internet)
+edge-tts>=7.0.0

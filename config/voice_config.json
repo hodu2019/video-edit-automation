@@ -1,0 +1,62 @@
+{
+  "_comment": "File cấu hình cho process_voice_videos.py. Mỗi entry trong 'videos' là 1 video cần xử lý.",
+
+  "settings": {
+    "_section": "=== CẤU HÌNH CHUNG (áp dụng cho tất cả video nếu không override) ===",
+
+    "source_dir":      "source_video_not_voice",
+    "output_dir":      "output_voice",
+    "background_path": "background.jpg",
+
+    "video_scale": 0.95,
+
+    "voice":        "en-US-AndrewNeural",
+    "voice_rate":   "+0%",
+    "voice_volume": "+0%",
+
+    "voice_audio_volume":    1.0,
+    "original_audio_volume": 0.25,
+    "mute_original_audio":   true,
+
+    "bg_music_enabled": true,
+    "bg_music_path":    "audio/audio_template.wav",
+    "bg_music_volume":  0.15,
+
+    "subtitle_font_size":      46,
+    "subtitle_words_per_line": 3,
+    "subtitle_position_y":     0.72,
+    "subtitle_color":          [255, 255, 255],
+    "subtitle_stroke_color":   [0,   0,   0  ],
+    "subtitle_stroke_width":   2,
+    "subtitle_font_path":      null,
+
+    "text_font_size":    44,
+    "text_position_x":  "center",
+    "text_position_y":  0.91,
+    "text_color":       [255, 255, 255],
+    "text_stroke_color":[0,   0,   0  ],
+    "text_stroke_width": 2,
+    "text_font_path":    null,
+    "text_padding_x":    40,
+
+    "output_fps":         30,
+    "output_codec":       "libx264",
+    "output_preset":      "fast",
+    "output_crf":         23,
+    "output_audio_codec": "aac"
+  },
+
+  "videos": [
+    {
+      "video": "1.mp4",
+
+      "audio_script": "A China watch factory just got leaked… and I'm not sugarcoating this. I paid 50 to 70 dollars — full Rolex box, packaging, tags… everything included. And you're still paying hundreds? That's on you. Information is out there — you just didn't look. Now you know. I sell supplier lists worldwide — this is exactly what you get. Comment vendor and I'll send it.",
+
+      "text": "Comment \"vendor\"\nto get my vendor\nand my vendor list",
+
+      "_note": "Các key dưới đây là tùy chọn – nếu để trống thì dùng giá trị trong settings",
+      "voice":      "en-US-AndrewNeural",
+      "voice_rate": "+5%"
+    }
+  ]
+}
